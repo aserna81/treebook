@@ -12,6 +12,11 @@
  *= require_tree .
  */
  body { 
- 	padding-top: 10px;
+ 	padding-top: 150px;
  	padding-left: 30px;	
+ }
+
+ .alert {
+
+ 	margin-top: 10px;
  }
