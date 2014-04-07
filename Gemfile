@@ -9,6 +9,11 @@ gem 'sqlite3'
 #Devise for sign up, sign in, sign out
 gem 'devise'
 
+# Help with the front end forms complemented with Bootstrap
+gem 'simple_form'
+
+gem 'protected_attributes'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
@@ -34,6 +39,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
