@@ -40,4 +40,11 @@ test "a user should have a unique profile name" do
  	assert user.errors[:profile_name].include?("Must be formatted correctly.")
  end
 
+ 	test "a user have a correctly formatted profile name" do
+ 		user = User.new(first_name: 'Jason', last_name: 'Seifer', email: 'jason@teamtreehouse.com')
+ 		user.password = user.password_confirmation = 'asdfasdf'
+
+ 		user.profile_name = "jasonseifer"
+ 		assert user.valid?
+ 	end
 end
