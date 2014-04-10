@@ -4,13 +4,17 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 
 #Devise for sign up, sign in, sign out
 gem 'devise'
 
 # Help with the front end forms complemented with Bootstrap
 gem 'simple_form'
+
+group :development, :test do
+	gem 'sqlite3'
+end	
 
 gem 'protected_attributes'
 
