@@ -5,3 +5,9 @@ jason:
  email: "jason@teamtreehouse.com"
  profile_name: "jasonseifer"
 
+jim:
+
+ first_name: "Jim"
+ last_name: "Hoskins"
+ email: "jaim@teamtreehouse.com"
+ profile_name: "jimhoskins"
