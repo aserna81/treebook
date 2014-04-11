@@ -12,6 +12,10 @@ gem 'devise'
 # Help with the front end forms complemented with Bootstrap
 gem 'simple_form'
 
+group :development, :test do
+	gem 'sqlite3'
+end	
+
 gem 'protected_attributes'
 
 # Use SCSS for stylesheets
