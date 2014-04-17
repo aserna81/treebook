@@ -1,10 +1,17 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-gem 'pg'
+
+group :production do 
+	gem 'pg'
+end
+
+group :test do 
+	gem 'shoulda'
+end
 
 #Devise for sign up, sign in, sign out
 gem 'devise'
