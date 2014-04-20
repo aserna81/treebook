@@ -62,6 +62,10 @@ test "a user should have a unique profile name" do
  			users(:jason).friends << users(:mike)
  			users(:jason).friends.reload
  			assert users(:jason).friends.include?(users(:mike))
- 	end		
- 		
+ 	end	
+
+ 	test "that calling to_param on an user returns the profile_name" do
+
+ 		assert_equal "jasonseifer", users(:jason).to_param
+ 	end	
 end

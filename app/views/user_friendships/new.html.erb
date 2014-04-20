@@ -1,0 +1,15 @@
+
+<% if @friend %>
+	<h1><%= @friend.email %><h1>
+
+	<p>Do you really want to friend <%= @friend.email %>?</p>
+
+	<%= form_for @user_friendship, method: :post do |form| %>
+		<div class="for form-actions">
+			<%= form.hidden_field :friend_id, value: @friend.profile_name %>
+			<%= submit_tag "Yes, Add friend", class: 'btn btn-primary' %>
+			<%= link_to "Cancel", profile_path(@friend), class:'btn' %>
+		</div>
+
+	<% end %>
+<% end %>
