@@ -12,7 +12,7 @@ Treebook::Application.routes.draw do
 
   as :user do
     get "/login" => 'devise/sessions#new', as: :new_user_session
-    post "/login" => 'devise/sessions#create', as: :nuser_session
+    post "/login" => 'devise/sessions#create', as: :user_session
     delete "/login" => 'devise/sessions#destroy', as: :destroy_user_session
   end  
 
