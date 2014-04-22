@@ -11,6 +11,7 @@ end
 
 group :test do 
 	gem 'shoulda'
+	gem 'factory_girl_rails'
 end
 
 #Devise for sign up, sign in, sign out
@@ -18,6 +19,8 @@ gem 'devise'
 
 # Help with the front end forms complemented with Bootstrap
 gem 'simple_form'
+
+gem 'state_machine'
 
 group :development, :test do
 	gem 'sqlite3'
